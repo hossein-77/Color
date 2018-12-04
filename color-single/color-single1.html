@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--RGB-Color---------------------------------------------------->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <meta http-equiv="refresh" content="3"> -->
+  <title>RGB Number</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/jquery-ui.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body-single1">
+  <div class="container">
+    <h2 class="text-light text-right">عدد مربوط به هر رنگ را درون کادر وارد کنید</h2>
+    <h3 class="text-right"><a href="#" class="link-modal-RGB text-light card-link">(+راهنما)</a></h3>
+    <div class="row">
+      <div class="col-6 input-num">
+        <div class="form-gorup f-gr-1">
+          <label for="red">R(Red):</label>
+          <input type="number" id="red" class="form-control w-50 ml-3" value="0" min="0" max="255">
+        </div>
+        <div class="form-gorup my-5">
+          <label for="green">G(Green):</label>
+          <input type="number" id="green" class="form-control w-50" value="0" min="0" max="255">
+        </div>
+        <div class="form-gorup">
+          <label for="blue">B(Blue):</label>
+          <input type="number" id="blue" class="form-control w-50 ml-3" value="0" min="0" max="255">
+        </div>
+      </div>
+        <div class="div-color-RGB col-6 border rounded">
+          <img src="../img/error.png" class="war error">
+        </div>
+      </div>
+   </div>
+   <!--modal structure------------------------------>
+   <div class="mask-modal"> </div>
+       <div class="modal-RGB-1">
+          <div class="modal-header bg-primary">    <!--rounded modal-header(modal default) id delete!!!!!---------->
+           <button type="button" class="close ml-0 btn-close">&times;</button>
+            <span class="mr-0 text-light">راهنما</span>
+          </div>
+          <div class="modal-body">
+            <p class="text-right">مقدار هر رنگ را می توانید درون کادر وارد کنید و یا با استفاده از کلید های جهتی بالا و پایین مقدار آن را تعیین کنید</p>
+            <p class="text-right">مقادیر نباید کمتر از صفر و یا بیشتر از 255 باشند و باید در محدوده 0 تا 255 باشند در غیر اینصورت با خطا مواجه می شوید</p>
+            <p class="text-right">برای اینکه تغییر رنگ را پیوسته و لحظه به لحظه مشاهده کنید مقدار رنگ را با کلید های جهتی بالا و پایین صفحه کلید تغییر دهید</p>
+          </div>
+       </div>
+
+</body>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jQcode.js"></script>
+</html>

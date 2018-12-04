@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Drag Color</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/jquery-ui.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body-single4">
+  <h3 class="text-right mt-4 mr-4">رنگ مورد نظر را درگ کنید <a href="#" class="link-modal-drag card-link">(+راهنما)</a></h3>
+  <div class="container">
+    <div class="container mx-4 my-4">
+      <div class="d-flex justify-content-center align-items-start">
+        <div class="div-drag div-drag1 m-2"></div>
+      </div>
+      <div class="d-flex justify-content-around align-items-end">
+        <div class="div-drag div-drag2 m-2"></div>
+        <div class="div-drag div-drag3 m-2"></div>
+      </div>
+    </div>
+  </div>
+  <!--modal structure------------------------------------------->
+  <div class="mask-modal-4"> </div>
+  <div class="modal-drag">
+    <div class="modal-header bg-primary">
+       <span class="mr-0">راهنما</span>
+       <button type="button" class="close ml-0 btn-close-4">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p class="text-right">یکی از رنگ ها را گرفته و درگ کنید و با قرار دادن آن رنگ روی رنگ دیگر ترکیب دو رنگ در قسمت مشترک آن ها مشخص می شود</p>
+      <img src="../img/color-drag.png" alt="coloe drag" class="d-flex mx-auto mt-5">
+    </div>
+  </div>
+</body>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jQcode.js"></script>
+</html>
